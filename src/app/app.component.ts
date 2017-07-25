@@ -20,6 +20,7 @@ export class AppComponent {
   products: any[];
   universities: any[];
   users: any[];
+  foobar;
 
   ex5Event;
   addEv;

@@ -22,5 +22,5 @@ after_success:
   - npm run build
   - npm run ngh
 branches:
-  except:
-    - /^v\d+\.\d+\.\d+$/
+  only:
+  - master
