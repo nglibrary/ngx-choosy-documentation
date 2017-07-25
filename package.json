@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --host 0.0.0.0 --disable-host-check",
     "build": "ng build --prod --base-href \"https://nglibrary.github.io/ngx-choosy-documentation/\"",
     "test-app": "ng test",
     "test": "echo \"No test specified\" && exit 0",

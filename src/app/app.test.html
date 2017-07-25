@@ -1,0 +1,19 @@
+<div id="box">
+  <button type="button" class="btn" choosyButtonSelect [options]="buttonMenu" [itemTemplate]="oneListItemTpl" [selectedItemTemplate]="oneSelectedItemTpl">Menu</button>
+</div>
+
+<button type="button" class="btn" choosyButtonSelect [options]="['a','b']">list</button>
+
+
+<ng-template #oneListItemTpl let-item>
+  <div>
+    <i class="fa fa-{{item.icon}}"></i>
+    <span>{{item.name}}</span>
+  </div>
+</ng-template>
+
+<ng-template #oneSelectedItemTpl let-item>
+  <div>
+    <span>{{item.name}}</span>
+  </div>
+</ng-template>

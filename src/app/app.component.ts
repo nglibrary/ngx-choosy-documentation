@@ -27,6 +27,8 @@ export class AppComponent {
   es5IsOpen = false;
   fthr = f;
   menu = [];
+
+  buttonMenu: any = [];
   ngOnInit() {
     this.addresses = addresses;
     this.colors = colors;
@@ -42,6 +44,14 @@ export class AppComponent {
       { name: 'Autocomplete' },
       { name: 'Configuration' },
       { name: 'Changelog' }
+    ];
+
+    this.buttonMenu = [
+      { name: 'Dashboard', icon: 'cogs' },
+      { name: 'Account', icon: 'user-circle-o' },
+      { name: 'Messages', icon: 'envelope-open' },
+      { name: 'Language', icon: 'globe' },
+      { name: 'Logout', icon: 'sign-out' }
     ];
 
   }
