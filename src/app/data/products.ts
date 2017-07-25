@@ -1,0 +1,161 @@
+export const products = [{
+  'id': 1,
+  'products': 'Computers',
+  'money': '$9.27'
+}, {
+  'id': 2,
+  'products': 'Sports',
+  'money': '$6.47'
+}, {
+  'id': 3,
+  'products': 'Outdoors',
+  'money': '$1.71'
+}, {
+  'id': 4,
+  'products': 'Beauty',
+  'money': '$1.60'
+}, {
+  'id': 5,
+  'products': 'Electronics',
+  'money': '$2.50'
+}, {
+  'id': 6,
+  'products': 'Outdoors',
+  'money': '$0.02'
+}, {
+  'id': 7,
+  'products': 'Automotive',
+  'money': '$0.65'
+}, {
+  'id': 8,
+  'products': 'Shoes',
+  'money': '$2.22'
+}, {
+  'id': 9,
+  'products': 'Home',
+  'money': '$3.49'
+}, {
+  'id': 10,
+  'products': 'Books',
+  'money': '$7.45'
+}, {
+  'id': 11,
+  'products': 'Movies',
+  'money': '$5.23'
+}, {
+  'id': 12,
+  'products': 'Clothing',
+  'money': '$6.69'
+}, {
+  'id': 13,
+  'products': 'Clothing',
+  'money': '$4.93'
+}, {
+  'id': 14,
+  'products': 'Computers',
+  'money': '$8.54'
+}, {
+  'id': 15,
+  'products': 'Games',
+  'money': '$7.85'
+}, {
+  'id': 16,
+  'products': 'Baby',
+  'money': '$2.73'
+}, {
+  'id': 17,
+  'products': 'Toys',
+  'money': '$2.78'
+}, {
+  'id': 18,
+  'products': 'Jewelery',
+  'money': '$4.14'
+}, {
+  'id': 19,
+  'products': 'Garden',
+  'money': '$7.01'
+}, {
+  'id': 20,
+  'products': 'Books',
+  'money': '$6.33'
+}, {
+  'id': 21,
+  'products': 'Kids',
+  'money': '$0.90'
+}, {
+  'id': 22,
+  'products': 'Shoes',
+  'money': '$5.25'
+}, {
+  'id': 23,
+  'products': 'Clothing',
+  'money': '$9.09'
+}, {
+  'id': 24,
+  'products': 'Garden',
+  'money': '$5.05'
+}, {
+  'id': 25,
+  'products': 'Clothing',
+  'money': '$3.21'
+}, {
+  'id': 26,
+  'products': 'Computers',
+  'money': '$5.12'
+}, {
+  'id': 27,
+  'products': 'Clothing',
+  'money': '$7.99'
+}, {
+  'id': 28,
+  'products': 'Books',
+  'money': '$7.86'
+}, {
+  'id': 29,
+  'products': 'Movies',
+  'money': '$2.90'
+}, {
+  'id': 30,
+  'products': 'Home',
+  'money': '$8.97'
+}, {
+  'id': 31,
+  'products': 'Clothing',
+  'money': '$0.84'
+}, {
+  'id': 32,
+  'products': 'Baby',
+  'money': '$6.73'
+}, {
+  'id': 33,
+  'products': 'Automotive',
+  'money': '$4.81'
+}, {
+  'id': 34,
+  'products': 'Kids',
+  'money': '$1.99'
+}, {
+  'id': 35,
+  'products': 'Garden',
+  'money': '$5.41'
+}, {
+  'id': 36,
+  'products': 'Jewelery',
+  'money': '$4.26'
+}, {
+  'id': 37,
+  'products': 'Kids',
+  'money': '$4.86'
+}, {
+  'id': 38,
+  'products': 'Sports',
+  'money': '$5.47'
+}, {
+  'id': 39,
+  'products': 'Games',
+  'money': '$3.86'
+}, {
+  'id': 40,
+  'products': 'Music',
+  'money': '$2.03'
+}];

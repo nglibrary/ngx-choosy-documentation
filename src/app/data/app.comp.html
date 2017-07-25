@@ -1,0 +1,92 @@
+<div class="container section">
+  <h1>Simple options without config</h1>
+  <div class="content">
+    <input type="text" placeholder="choose university" choosySingleSelect [options]="universities" />
+  </div>
+</div>
+
+
+<div class="container section">
+  <h1>simple options with config</h1>
+  <div class="content">
+    <input type="text" placeholder="choose" choosySingleSelect [options]="universities" [config]="{wrapInput:true}" />
+  </div>
+</div>
+<div class="container section">
+  <div class="col-md-6">
+    <h1>bootstrap without wrap</h1>
+    <div class="content">
+      <div class="form-group">
+        <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+        <div class="input-group">
+          <div class="input-group-addon">$</div>
+          <input type="text" placeholder="choose" class="form-control" choosySingleSelect [options]="universities" />
+          <div class="input-group-addon">.00</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+
+    <h1>bootstrap with wrap</h1>
+    <div class="content">
+      <div class="form-group">
+        <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+        <div class="input-group">
+          <div class="input-group-addon">$</div>
+          <input type="text" placeholder="choose" class="form-control" choosySingleSelect [options]="universities" [config]="{wrapInput:true}"
+          />
+          <div class="input-group-addon">.00</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h1>togle arrow</h1>
+  <div class="content">
+    <div class="form-group">
+      <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+      <div class="input-group">
+        <input type="text" placeholder="choose" class="form-control" choosySingleSelect [options]="universities" [config]="{wrapInput:true}"
+          (isOpen)="es5IsOpen=$event" (choosy)="ex5($event)" />
+        <div class="input-group-addon">
+          <i class="fa" [ngClass]="{'fa-angle-up':es5IsOpen,'fa-angle-down':!es5IsOpen}"></i>
+        </div>
+        <!-- <pre>{{es5IsOpen}}</pre>  -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="col-md-4">
+    <h1>custom template</h1>
+    <div class="content">
+      <div class="form-group">
+        <label class="sr-only" for="exampleInputAmount">Colors</label>
+        <div class="input-group">
+          <input type="text" placeholder="choose" class="form-control" choosySingleSelect [options]="addresses" [config]="{search:{keys:['value.street','value.country']}}"
+            [template]="add" (isOpen)="foobar=$event" (choosy)="addressEvent($event)" />
+          <div class="input-group-addon" (click)="openAddressDd($event)">
+            <i class="fa" [ngClass]="{'fa-angle-up':foobar,'fa-angle-down':!foobar}"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template let-item #add>
+  <div><strong>{{item.street}}</strong></div>
+  <div>{{item.city}} &middot; {{item.country}}</div>
+</ng-template>
+
+<!--
+<div class="container section profession">
+  <h1>Options with config</h1>
+  <div class="content">
+    <input type="text" placeholder="email" ChoosySingleSelect [config]="" [options]="emailAddresses" />
+  </div>
+</div>
+-->
