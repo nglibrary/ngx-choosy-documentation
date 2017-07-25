@@ -10,7 +10,7 @@
     "test": "echo \"No test specified\" && exit 0",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "semantic-release": "semantic-release pre && semantic-release post",
     "ngh": "ngh --repo=https://GH_TOKEN@github.com/nglibrary/ngx-choosy-documentation.git"
   },
   "dependencies": {
