@@ -1,5 +1,7 @@
 # NgxChoosy
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/nglibrary/ngx-choosy-documentation.svg)](https://greenkeeper.io/)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.3.
 
 ## Development server
