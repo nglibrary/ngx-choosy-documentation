@@ -1,12 +1,13 @@
 $col--primary:#21c4e0;
 $col--sec:#7cdced;
-$col--bg:#fcf8ff;
+$col--bg:#F7F8FA;
 $col--text:#70949a;
 $col--border:#baccce;
 body {
     font-family: 'Nunito', sans-serif;
     background-color: $col--bg;
     color: $col--text;
+    height: 2000px;
 }
 
 .navbar-default {

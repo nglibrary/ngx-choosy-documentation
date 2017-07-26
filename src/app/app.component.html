@@ -62,6 +62,18 @@
               </div>
             </div>
           </div>
+          <div class="example">
+            <h2><i data-feather="play"></i>With animation and without search/footer</h2>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                  <input type="text" placeholder="choose" class="form-control" choosySingleSelect [options]="universities" [config]="{search:{enable:false},footer:{enable:false},dropdown:{animation:true}}"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div class="example">
             <h2><i data-feather="play"></i> Custom template</h2>
