@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import * as f from 'feather-icons';
 import {
   addresses,
@@ -6,15 +6,15 @@ import {
   products,
   universities,
   users
-} from './data';
-
+} from '../../data';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-examples',
+  templateUrl: './examples.component.html',
+  styleUrls: ['./examples.component.scss']
 })
-export class AppComponent {
+export class ExamplesComponent implements OnInit {
+
   addresses: any[];
   colors: any[];
   products: any[];
@@ -35,16 +35,6 @@ export class AppComponent {
     this.products = products;
     this.universities = universities;
     this.users = users;
-    this.menu = [
-      { name: 'Demo', url: '/' },
-      { name: 'Installation', url: '/' },
-      { name: 'Single select', url: '/' },
-      { name: 'Multi select', url: '/' },
-      { name: 'Button dropdown', url: '/' },
-      { name: 'Autocomplete', url: '/' },
-      { name: 'Configuration', url: '/' },
-      { name: 'Changelog', url: '/changelog' }
-    ];
 
     this.buttonMenu = [
       { name: 'Dashboard', icon: 'cogs' },
@@ -69,4 +59,5 @@ export class AppComponent {
     console.log('open', this.addEv);
     this.addEv.actions.toggle();
   }
+
 }

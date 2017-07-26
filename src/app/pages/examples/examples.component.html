@@ -1,0 +1,62 @@
+<div id="content">
+  <h1>Basic demo</h1>
+  <p>
+    <strong>ngx-choosy</strong> turns any input element in to a dropdown select box. Thus, it does not apply any styles to
+    your input. It also gives a freedom to style your input fields to your needs.
+  </p>
+  <br/>
+  <div class="example">
+    <h2><i data-feather="play"></i> Single select dropdown</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+          <input type="text" placeholder="choose" class="form-control" choosySingleSelect [options]="universities" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="example">
+    <h2><i data-feather="play"></i>With animation and without search/footer</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+          <input type="text" placeholder="choose" class="form-control" choosySingleSelect [options]="universities" [config]="{search:{enable:false},footer:{enable:false},dropdown:{animation:true}}"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="example">
+    <h2><i data-feather="play"></i> Custom template</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label class="sr-only" for="exampleInputAmount">Colors</label>
+          <div class="input-group">
+            <input type="text" placeholder="choose" class="form-control" choosySingleSelect [options]="users" [config]="{displayValue:'email',search:{keys:['value.email','value.name.first','value.name.last']}}"
+              [template]="add" (isOpen)="foobar=$event" (choosy)="addressEvent($event)" />
+            <div class="input-group-addon" (click)="openAddressDd($event)">
+              <i class="fa" [ngClass]="{'fa-angle-up':foobar,'fa-angle-down':!foobar}"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<ng-template let-item #add>
+  <div class="card">
+    <div class="pic">
+      <img src="{{item.picture.thumbnail}}">
+    </div>
+    <div class="detail">
+      <div><strong>{{item.name.first}} {{item.name.last}}</strong></div>
+      <div>{{item.email}}</div>
+    </div>
+  </div>
+</ng-template>
