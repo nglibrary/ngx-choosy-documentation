@@ -22,7 +22,7 @@
     "@angular/http": "^4.0.0",
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
-    "@angular/router": "^4.0.0",
+    "@angular/router": "^5.1.3",
     "@nglibrary/ngx-choosy": "^1.1.0",
     "bootstrap-sass": "^3.3.7",
     "classlist.js": "^1.1.20150312",
